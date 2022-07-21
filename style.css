@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #1e1e1e;
+}
+
+svg circle {
+    fill: #e1e1e1;
+    animation: dot-fill 200ms ease forwards;
+}
+
+svg line {
+    stroke-width: 5;
+    stroke: #e1e1e1;
+}
+
+circle.shadow {
+    fill: #8e8e8e;
+} line.shadow {
+    stroke: #8e8e8e;
+} .shadow[show] {
+    display: inline !important;
+}
+
+@keyframes dot-fill {
+    from {
+        r: 0;
+    } to {
+        r: 15px;
+    }
+}
